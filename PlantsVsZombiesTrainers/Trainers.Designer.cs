@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trainers));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.sunrain = new System.Windows.Forms.CheckBox();
             this.nocd = new System.Windows.Forms.CheckBox();
             this.editcoin = new System.Windows.Forms.Button();
             this.coin = new System.Windows.Forms.TextBox();
@@ -44,6 +45,7 @@
             this.gname = new System.Windows.Forms.TextBox();
             this.reload = new System.Windows.Forms.Button();
             this.nocdtimer = new System.Windows.Forms.Timer(this.components);
+            this.sunraintimer = new System.Windows.Forms.Timer(this.components);
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -59,6 +61,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.sunrain);
             this.tabPage1.Controls.Add(this.nocd);
             this.tabPage1.Controls.Add(this.editcoin);
             this.tabPage1.Controls.Add(this.coin);
@@ -67,6 +70,13 @@
             resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // sunrain
+            // 
+            resources.ApplyResources(this.sunrain, "sunrain");
+            this.sunrain.Name = "sunrain";
+            this.sunrain.UseVisualStyleBackColor = true;
+            this.sunrain.CheckedChanged += new System.EventHandler(this.sunrain_CheckedChanged);
             // 
             // nocd
             // 
@@ -138,8 +148,13 @@
             // 
             // nocdtimer
             // 
-            this.nocdtimer.Interval = 300;
+            this.nocdtimer.Interval = 1000;
             this.nocdtimer.Tick += new System.EventHandler(this.nocdtimer_Tick);
+            // 
+            // sunraintimer
+            // 
+            this.sunraintimer.Interval = 300;
+            this.sunraintimer.Tick += new System.EventHandler(this.sunraintimer_Tick);
             // 
             // Trainers
             // 
@@ -178,6 +193,8 @@
         private System.Windows.Forms.TextBox adv;
         private System.Windows.Forms.CheckBox nocd;
         private System.Windows.Forms.Timer nocdtimer;
+        private System.Windows.Forms.CheckBox sunrain;
+        private System.Windows.Forms.Timer sunraintimer;
     }
 }
 

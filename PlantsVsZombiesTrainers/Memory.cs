@@ -90,19 +90,21 @@ namespace PlantsVsZombiesTool
         //读取内存中的值
         public static int ReadMemoryValue(int baseAddress, string processName)
         {
+
+            byte[] buffer = new byte[4];
+            IntPtr byteAddress = Marshal.UnsafeAddrOfPinnedArrayElement(buffer, 0); //获取缓冲区地址
+            IntPtr hProcess = OpenProcess(0x1F0FFF, false, GetPidByProcessName(processName));
+            ReadProcessMemory(hProcess, (IntPtr)baseAddress, byteAddress, 4, IntPtr.Zero); //将制定内存中的值读入缓冲区
+            CloseHandle(hProcess);
             try
             {
-                byte[] buffer = new byte[4];
-                IntPtr byteAddress = Marshal.UnsafeAddrOfPinnedArrayElement(buffer, 0); //获取缓冲区地址
-                IntPtr hProcess = OpenProcess(0x1F0FFF, false, GetPidByProcessName(processName));
-                ReadProcessMemory(hProcess, (IntPtr)baseAddress, byteAddress, 4, IntPtr.Zero); //将制定内存中的值读入缓冲区
-                CloseHandle(hProcess);
                 return Marshal.ReadInt32(byteAddress);
             }
             catch
             {
                 return 0;
             }
+
         }
 
         //将值写入指定内存地址中

@@ -164,6 +164,18 @@
   <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;sunrain.Name" xml:space="preserve">
+    <value>sunrain</value>
+  </data>
+  <data name="&gt;&gt;sunrain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sunrain.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;sunrain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;nocd.Name" xml:space="preserve">
     <value>nocd</value>
   </data>
@@ -174,7 +186,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;nocd.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;editcoin.Name" xml:space="preserve">
     <value>editcoin</value>
@@ -186,7 +198,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;editcoin.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;coin.Name" xml:space="preserve">
     <value>coin</value>
@@ -198,7 +210,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;coin.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;sun.Name" xml:space="preserve">
     <value>sun</value>
@@ -210,7 +222,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;sun.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;editsun.Name" xml:space="preserve">
     <value>editsun</value>
@@ -222,7 +234,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;editsun.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
@@ -249,6 +261,33 @@
   <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="sunrain.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sunrain.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sunrain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 74</value>
+  </data>
+  <data name="sunrain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 17</value>
+  </data>
+  <data name="sunrain.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;sunrain.Name" xml:space="preserve">
+    <value>sunrain</value>
+  </data>
+  <data name="&gt;&gt;sunrain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sunrain.Parent" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;sunrain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="nocd.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -271,7 +310,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;nocd.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="editcoin.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 37</value>
@@ -292,7 +331,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;editcoin.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="coin.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 6</value>
@@ -313,7 +352,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;coin.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="sun.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
@@ -334,7 +373,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;sun.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="editsun.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 37</value>
@@ -355,7 +394,7 @@
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;editsun.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;editadv.Name" xml:space="preserve">
     <value>editadv</value>
@@ -516,6 +555,9 @@
   <metadata name="nocdtimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="sunraintimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>149, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -529,6 +571,12 @@
     <value>nocdtimer</value>
   </data>
   <data name="&gt;&gt;nocdtimer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sunraintimer.Name" xml:space="preserve">
+    <value>sunraintimer</value>
+  </data>
+  <data name="&gt;&gt;sunraintimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

@@ -23,7 +23,7 @@ namespace PlantsVsZombiesTrainers
 
         private void editsun_Click(object sender, EventArgs e)
         {
-            Memory.WriteMemoryValue(getSunBaseAddress(), gname.Text,int.Parse(sun.Text));
+            Memory.WriteMemoryValue(getSunBaseAddress(), gname.Text, int.Parse(sun.Text));
         }
 
         private void editcoin_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace PlantsVsZombiesTrainers
             Memory.WriteMemoryValue(getAdvPageBaseAddress(), gname.Text, int.Parse(adv.Text));
         }
 
-        public int getSunBaseAddress() 
+        public int getSunBaseAddress()
         {
             int baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
             baseaddress = baseaddress + 0x868;
@@ -52,6 +52,15 @@ namespace PlantsVsZombiesTrainers
             baseaddress = baseaddress + 0x94c;
             baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
             baseaddress = baseaddress + 0x54;
+            return baseaddress;
+        }
+
+        public int getSunRainBaseAddress()
+        {
+            int baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
+            baseaddress = baseaddress + 0x868;
+            baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
+            baseaddress = baseaddress + 0x5550;
             return baseaddress;
         }
 
@@ -71,7 +80,7 @@ namespace PlantsVsZombiesTrainers
             load();
         }
 
-        public void load() 
+        public void load()
         {
             PID = Memory.GetPidByProcessName(gname.Text);
             pidlabel.Text = "PID:" + PID;
@@ -99,7 +108,7 @@ namespace PlantsVsZombiesTrainers
             res.ApplyResources(this, "$this");
         }
 
-        public int getBaseAddress() 
+        public int getBaseAddress()
         {
             return 0x00731CDC;
         }
@@ -109,7 +118,8 @@ namespace PlantsVsZombiesTrainers
             if (nocd.Checked)
             {
                 nocdtimer.Enabled = true;
-            }else
+            }
+            else
             {
                 nocdtimer.Enabled = false;
             }
@@ -129,7 +139,15 @@ namespace PlantsVsZombiesTrainers
             baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
             baseaddress = baseaddress + 0x868;
             baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
+            baseaddress = baseaddress + 0x15c;
+            baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
             baseaddress = baseaddress + 0xc0;
+            Memory.WriteMemoryValue(baseaddress, gname.Text, 1);
+
+            baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
+            baseaddress = baseaddress + 0x868;
+            baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
+            baseaddress = baseaddress + 0x15c;
             baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
             baseaddress = baseaddress + 0x110;
             Memory.WriteMemoryValue(baseaddress, gname.Text, 1);
@@ -157,6 +175,23 @@ namespace PlantsVsZombiesTrainers
             baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
             baseaddress = baseaddress + 0x200;
             Memory.WriteMemoryValue(baseaddress, gname.Text, 1);
+        }
+
+        private void sunrain_CheckedChanged(object sender, EventArgs e)
+        {
+            if (sunrain.Checked)
+            {
+                sunraintimer.Enabled = true;
+            }
+            else
+            {
+                sunraintimer.Enabled = false;
+            }
+        }
+
+        private void sunraintimer_Tick(object sender, EventArgs e)
+        {
+            Memory.WriteMemoryValue(getSunRainBaseAddress(), gname.Text, 1);
         }
     }
 }

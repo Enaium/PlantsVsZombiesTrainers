@@ -157,4 +157,7 @@
   <data name="nocd.Text" xml:space="preserve">
     <value>无CD</value>
   </data>
+  <data name="sunrain.Text" xml:space="preserve">
+    <value>阳光雨</value>
+  </data>
 </root>

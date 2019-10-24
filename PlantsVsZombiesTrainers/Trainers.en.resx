@@ -138,6 +138,9 @@
   <data name="reload.Text" xml:space="preserve">
     <value>Reload</value>
   </data>
+  <data name="sunrain.Text" xml:space="preserve">
+    <value>SunRain</value>
+  </data>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Easy</value>
   </data>
