@@ -123,6 +123,9 @@
   <data name="editadv.Text" xml:space="preserve">
     <value>EditAdvPage</value>
   </data>
+  <data name="editbosshp" xml:space="preserve">
+    <value>EditBossHP</value>
+  </data>
   <data name="editcoin.Text" xml:space="preserve">
     <value>EditCoin</value>
   </data>
@@ -146,5 +149,8 @@
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Page</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>Zombies</value>
   </data>
 </root>

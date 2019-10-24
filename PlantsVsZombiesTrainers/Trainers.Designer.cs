@@ -41,20 +41,25 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.editadv = new System.Windows.Forms.Button();
             this.adv = new System.Windows.Forms.TextBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.pidlabel = new System.Windows.Forms.Label();
             this.gname = new System.Windows.Forms.TextBox();
             this.reload = new System.Windows.Forms.Button();
             this.nocdtimer = new System.Windows.Forms.Timer(this.components);
             this.sunraintimer = new System.Windows.Forms.Timer(this.components);
+            this.bosshp = new System.Windows.Forms.TextBox();
+            this.editbosshp = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
             // 
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage2);
+            this.tabControl.Controls.Add(this.tabPage3);
             resources.ApplyResources(this.tabControl, "tabControl");
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -129,6 +134,14 @@
             resources.ApplyResources(this.adv, "adv");
             this.adv.Name = "adv";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.editbosshp);
+            this.tabPage3.Controls.Add(this.bosshp);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // pidlabel
             // 
             resources.ApplyResources(this.pidlabel, "pidlabel");
@@ -156,6 +169,18 @@
             this.sunraintimer.Interval = 300;
             this.sunraintimer.Tick += new System.EventHandler(this.sunraintimer_Tick);
             // 
+            // bosshp
+            // 
+            resources.ApplyResources(this.bosshp, "bosshp");
+            this.bosshp.Name = "bosshp";
+            // 
+            // editbosshp
+            // 
+            resources.ApplyResources(this.editbosshp, "editbosshp");
+            this.editbosshp.Name = "editbosshp";
+            this.editbosshp.UseVisualStyleBackColor = true;
+            this.editbosshp.Click += new System.EventHandler(this.editbosshp_Click);
+            // 
             // Trainers
             // 
             resources.ApplyResources(this, "$this");
@@ -172,6 +197,8 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,6 +222,9 @@
         private System.Windows.Forms.Timer nocdtimer;
         private System.Windows.Forms.CheckBox sunrain;
         private System.Windows.Forms.Timer sunraintimer;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button editbosshp;
+        private System.Windows.Forms.TextBox bosshp;
     }
 }
 

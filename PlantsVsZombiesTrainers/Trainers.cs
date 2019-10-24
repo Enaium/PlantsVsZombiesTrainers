@@ -73,6 +73,16 @@ namespace PlantsVsZombiesTrainers
             return baseaddress;
         }
 
+        public int getBossHpBaseAddress()
+        { 
+            int baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
+            baseaddress = baseaddress + 0x868;
+            baseaddress = Memory.ReadMemoryValue(baseaddress,gname.Text);
+            baseaddress = baseaddress + 0xa8;
+            baseaddress = Memory.ReadMemoryValue(baseaddress,gname.Text);
+            baseaddress = baseaddress + 0xc8;
+            return baseaddress;
+        }
 
 
         private void Main_Load(object sender, EventArgs e)
@@ -87,6 +97,8 @@ namespace PlantsVsZombiesTrainers
             sun.Text = Memory.ReadMemoryValue(getSunBaseAddress(), gname.Text).ToString();
             coin.Text = Memory.ReadMemoryValue(getCoinBaseAddress(), gname.Text).ToString();
             adv.Text = Memory.ReadMemoryValue(getAdvPageBaseAddress(), gname.Text).ToString();
+            bosshp.Text = Memory.ReadMemoryValue(getBossHpBaseAddress(),gname.Text).ToString();
+            
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en");
             ApplyResource();
         }
@@ -192,6 +204,11 @@ namespace PlantsVsZombiesTrainers
         private void sunraintimer_Tick(object sender, EventArgs e)
         {
             Memory.WriteMemoryValue(getSunRainBaseAddress(), gname.Text, 1);
+        }
+
+        private void editbosshp_Click(object sender, EventArgs e)
+        {
+            Memory.WriteMemoryValue(getBossHpBaseAddress(),gname.Text,int.Parse(bosshp.Text));
         }
     }
 }

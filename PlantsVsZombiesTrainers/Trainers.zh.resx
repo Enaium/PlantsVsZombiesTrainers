@@ -160,4 +160,10 @@
   <data name="sunrain.Text" xml:space="preserve">
     <value>阳光雨</value>
   </data>
+  <data name="editbosshp.Text" xml:space="preserve">
+    <value>修改博士血量</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>僵尸</value>
+  </data>
 </root>
