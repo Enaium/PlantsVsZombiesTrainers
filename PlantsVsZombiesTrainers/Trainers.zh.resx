@@ -117,4 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="editcoin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 30</value>
+  </data>
+  <data name="editcoin.Text" xml:space="preserve">
+    <value>修改钱币</value>
+  </data>
+  <data name="editsun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 30</value>
+  </data>
+  <data name="editsun.Text" xml:space="preserve">
+    <value>修改阳光</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>简单</value>
+  </data>
+  <data name="editadv.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 30</value>
+  </data>
+  <data name="editadv.Text" xml:space="preserve">
+    <value>修改冒险关</value>
+  </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>关卡</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>620, 312</value>
+  </data>
+  <data name="gname.Text" xml:space="preserve">
+    <value>popcapgame1</value>
+  </data>
+  <data name="reload.Text" xml:space="preserve">
+    <value>重载</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>植物大战僵尸年度版</value>
+  </data>
+  <data name="nocd.Text" xml:space="preserve">
+    <value>无CD</value>
+  </data>
 </root>

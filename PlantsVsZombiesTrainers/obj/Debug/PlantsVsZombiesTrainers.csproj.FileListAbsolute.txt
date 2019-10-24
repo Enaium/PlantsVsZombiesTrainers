@@ -2,8 +2,14 @@ C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\bin
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\bin\Debug\PlantsVsZombiesTrainers.exe
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\bin\Debug\PlantsVsZombiesTrainers.pdb
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.csprojAssemblyReference.cache
-C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.Main.resources
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.Properties.Resources.resources
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.csproj.GenerateResource.cache
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.exe
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.pdb
+C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.Trainers.resources
+C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\bin\Debug\en\PlantsVsZombiesTrainers.resources.dll
+C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.Trainers.en.resources
+C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\en\PlantsVsZombiesTrainers.resources.dll
+C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\bin\Debug\zh\PlantsVsZombiesTrainers.resources.dll
+C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.Trainers.zh.resources
+C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\zh\PlantsVsZombiesTrainers.resources.dll
