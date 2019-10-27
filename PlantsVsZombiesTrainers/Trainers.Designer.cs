@@ -49,10 +49,19 @@
             this.reload = new System.Windows.Forms.Button();
             this.nocdtimer = new System.Windows.Forms.Timer(this.components);
             this.sunraintimer = new System.Windows.Forms.Timer(this.components);
+            this.editfertilizer = new System.Windows.Forms.Button();
+            this.fertilizer = new System.Windows.Forms.TextBox();
+            this.editbugspray = new System.Windows.Forms.Button();
+            this.bugspray = new System.Windows.Forms.TextBox();
+            this.editchocolate = new System.Windows.Forms.Button();
+            this.chocolate = new System.Windows.Forms.TextBox();
+            this.edittreefood = new System.Windows.Forms.Button();
+            this.treefood = new System.Windows.Forms.TextBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -154,10 +163,10 @@
             // 
             // editadv
             // 
-            this.editadv.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.editadv.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.editadv.Location = new System.Drawing.Point(6, 37);
             this.editadv.Name = "editadv";
-            this.editadv.Size = new System.Drawing.Size(100, 23);
+            this.editadv.Size = new System.Drawing.Size(121, 31);
             this.editadv.TabIndex = 4;
             this.editadv.Text = "EditAdvPage";
             this.editadv.UseVisualStyleBackColor = true;
@@ -167,7 +176,7 @@
             // 
             this.adv.Location = new System.Drawing.Point(6, 6);
             this.adv.Name = "adv";
-            this.adv.Size = new System.Drawing.Size(100, 25);
+            this.adv.Size = new System.Drawing.Size(121, 25);
             this.adv.TabIndex = 3;
             // 
             // tabPage3
@@ -202,6 +211,14 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.edittreefood);
+            this.tabPage4.Controls.Add(this.treefood);
+            this.tabPage4.Controls.Add(this.editchocolate);
+            this.tabPage4.Controls.Add(this.chocolate);
+            this.tabPage4.Controls.Add(this.editbugspray);
+            this.tabPage4.Controls.Add(this.bugspray);
+            this.tabPage4.Controls.Add(this.editfertilizer);
+            this.tabPage4.Controls.Add(this.fertilizer);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -224,6 +241,7 @@
             this.gname.Name = "gname";
             this.gname.Size = new System.Drawing.Size(100, 25);
             this.gname.TabIndex = 3;
+            this.gname.Text = "popcapgame1";
             // 
             // reload
             // 
@@ -243,6 +261,78 @@
             // 
             this.sunraintimer.Interval = 300;
             this.sunraintimer.Tick += new System.EventHandler(this.sunraintimer_Tick);
+            // 
+            // editfertilizer
+            // 
+            this.editfertilizer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.editfertilizer.Location = new System.Drawing.Point(6, 37);
+            this.editfertilizer.Name = "editfertilizer";
+            this.editfertilizer.Size = new System.Drawing.Size(130, 31);
+            this.editfertilizer.TabIndex = 4;
+            this.editfertilizer.Text = "EditFertilizer";
+            this.editfertilizer.UseVisualStyleBackColor = true;
+            this.editfertilizer.Click += new System.EventHandler(this.editfertilizer_Click);
+            // 
+            // fertilizer
+            // 
+            this.fertilizer.Location = new System.Drawing.Point(6, 6);
+            this.fertilizer.Name = "fertilizer";
+            this.fertilizer.Size = new System.Drawing.Size(130, 25);
+            this.fertilizer.TabIndex = 3;
+            // 
+            // editbugspray
+            // 
+            this.editbugspray.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.editbugspray.Location = new System.Drawing.Point(142, 37);
+            this.editbugspray.Name = "editbugspray";
+            this.editbugspray.Size = new System.Drawing.Size(130, 31);
+            this.editbugspray.TabIndex = 6;
+            this.editbugspray.Text = "EditBugSpray";
+            this.editbugspray.UseVisualStyleBackColor = true;
+            this.editbugspray.Click += new System.EventHandler(this.editbugspray_Click);
+            // 
+            // bugspray
+            // 
+            this.bugspray.Location = new System.Drawing.Point(142, 6);
+            this.bugspray.Name = "bugspray";
+            this.bugspray.Size = new System.Drawing.Size(130, 25);
+            this.bugspray.TabIndex = 5;
+            // 
+            // editchocolate
+            // 
+            this.editchocolate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.editchocolate.Location = new System.Drawing.Point(278, 37);
+            this.editchocolate.Name = "editchocolate";
+            this.editchocolate.Size = new System.Drawing.Size(130, 31);
+            this.editchocolate.TabIndex = 8;
+            this.editchocolate.Text = "EditChocolate";
+            this.editchocolate.UseVisualStyleBackColor = true;
+            this.editchocolate.Click += new System.EventHandler(this.editchocolate_Click);
+            // 
+            // chocolate
+            // 
+            this.chocolate.Location = new System.Drawing.Point(278, 6);
+            this.chocolate.Name = "chocolate";
+            this.chocolate.Size = new System.Drawing.Size(130, 25);
+            this.chocolate.TabIndex = 7;
+            // 
+            // edittreefood
+            // 
+            this.edittreefood.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.edittreefood.Location = new System.Drawing.Point(414, 37);
+            this.edittreefood.Name = "edittreefood";
+            this.edittreefood.Size = new System.Drawing.Size(130, 31);
+            this.edittreefood.TabIndex = 10;
+            this.edittreefood.Text = "EditTreeFood";
+            this.edittreefood.UseVisualStyleBackColor = true;
+            this.edittreefood.Click += new System.EventHandler(this.edittreefood_Click);
+            // 
+            // treefood
+            // 
+            this.treefood.Location = new System.Drawing.Point(414, 6);
+            this.treefood.Name = "treefood";
+            this.treefood.Size = new System.Drawing.Size(130, 25);
+            this.treefood.TabIndex = 9;
             // 
             // Trainers
             // 
@@ -264,6 +354,8 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,7 +373,6 @@
         private System.Windows.Forms.Button reload;
         private System.Windows.Forms.Button editcoin;
         private System.Windows.Forms.TextBox coin;
-        private System.Windows.Forms.Button editadv;
         private System.Windows.Forms.TextBox adv;
         private System.Windows.Forms.CheckBox nocd;
         private System.Windows.Forms.Timer nocdtimer;
@@ -291,6 +382,15 @@
         private System.Windows.Forms.Button editbosshp;
         private System.Windows.Forms.TextBox bosshp;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button editadv;
+        private System.Windows.Forms.Button editbugspray;
+        private System.Windows.Forms.TextBox bugspray;
+        private System.Windows.Forms.Button editfertilizer;
+        private System.Windows.Forms.TextBox fertilizer;
+        private System.Windows.Forms.Button editchocolate;
+        private System.Windows.Forms.TextBox chocolate;
+        private System.Windows.Forms.Button edittreefood;
+        private System.Windows.Forms.TextBox treefood;
     }
 }
 

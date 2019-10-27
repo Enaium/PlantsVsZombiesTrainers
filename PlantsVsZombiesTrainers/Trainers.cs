@@ -84,6 +84,16 @@ namespace PlantsVsZombiesTrainers
             return baseaddress;
         }
 
+        public int getFertilizerBaseAddress()
+        {
+            int baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
+            baseaddress = baseaddress + 0x868;
+            baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
+
+            return baseaddress;
+        }
+
+
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -189,6 +199,8 @@ namespace PlantsVsZombiesTrainers
             Memory.WriteMemoryValue(baseaddress, gname.Text, 1);
         }
 
+
+
         private void sunrain_CheckedChanged(object sender, EventArgs e)
         {
             if (sunrain.Checked)
@@ -209,6 +221,26 @@ namespace PlantsVsZombiesTrainers
         private void editbosshp_Click(object sender, EventArgs e)
         {
             Memory.WriteMemoryValue(getBossHpBaseAddress(),gname.Text,int.Parse(bosshp.Text));
+        }
+
+        private void editfertilizer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editbugspray_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editchocolate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void edittreefood_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
