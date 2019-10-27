@@ -55,8 +55,8 @@
             this.bugspray = new System.Windows.Forms.TextBox();
             this.editchocolate = new System.Windows.Forms.Button();
             this.chocolate = new System.Windows.Forms.TextBox();
-            this.edittreefood = new System.Windows.Forms.Button();
             this.treefood = new System.Windows.Forms.TextBox();
+            this.edittreefood = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -267,7 +267,7 @@
             this.editfertilizer.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.editfertilizer.Location = new System.Drawing.Point(6, 37);
             this.editfertilizer.Name = "editfertilizer";
-            this.editfertilizer.Size = new System.Drawing.Size(130, 31);
+            this.editfertilizer.Size = new System.Drawing.Size(144, 31);
             this.editfertilizer.TabIndex = 4;
             this.editfertilizer.Text = "EditFertilizer";
             this.editfertilizer.UseVisualStyleBackColor = true;
@@ -277,15 +277,15 @@
             // 
             this.fertilizer.Location = new System.Drawing.Point(6, 6);
             this.fertilizer.Name = "fertilizer";
-            this.fertilizer.Size = new System.Drawing.Size(130, 25);
+            this.fertilizer.Size = new System.Drawing.Size(144, 25);
             this.fertilizer.TabIndex = 3;
             // 
             // editbugspray
             // 
             this.editbugspray.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.editbugspray.Location = new System.Drawing.Point(142, 37);
+            this.editbugspray.Location = new System.Drawing.Point(156, 37);
             this.editbugspray.Name = "editbugspray";
-            this.editbugspray.Size = new System.Drawing.Size(130, 31);
+            this.editbugspray.Size = new System.Drawing.Size(144, 31);
             this.editbugspray.TabIndex = 6;
             this.editbugspray.Text = "EditBugSpray";
             this.editbugspray.UseVisualStyleBackColor = true;
@@ -293,17 +293,17 @@
             // 
             // bugspray
             // 
-            this.bugspray.Location = new System.Drawing.Point(142, 6);
+            this.bugspray.Location = new System.Drawing.Point(156, 6);
             this.bugspray.Name = "bugspray";
-            this.bugspray.Size = new System.Drawing.Size(130, 25);
+            this.bugspray.Size = new System.Drawing.Size(144, 25);
             this.bugspray.TabIndex = 5;
             // 
             // editchocolate
             // 
             this.editchocolate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.editchocolate.Location = new System.Drawing.Point(278, 37);
+            this.editchocolate.Location = new System.Drawing.Point(306, 37);
             this.editchocolate.Name = "editchocolate";
-            this.editchocolate.Size = new System.Drawing.Size(130, 31);
+            this.editchocolate.Size = new System.Drawing.Size(144, 31);
             this.editchocolate.TabIndex = 8;
             this.editchocolate.Text = "EditChocolate";
             this.editchocolate.UseVisualStyleBackColor = true;
@@ -311,28 +311,28 @@
             // 
             // chocolate
             // 
-            this.chocolate.Location = new System.Drawing.Point(278, 6);
+            this.chocolate.Location = new System.Drawing.Point(306, 6);
             this.chocolate.Name = "chocolate";
-            this.chocolate.Size = new System.Drawing.Size(130, 25);
+            this.chocolate.Size = new System.Drawing.Size(144, 25);
             this.chocolate.TabIndex = 7;
+            // 
+            // treefood
+            // 
+            this.treefood.Location = new System.Drawing.Point(456, 6);
+            this.treefood.Name = "treefood";
+            this.treefood.Size = new System.Drawing.Size(144, 25);
+            this.treefood.TabIndex = 9;
             // 
             // edittreefood
             // 
             this.edittreefood.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.edittreefood.Location = new System.Drawing.Point(414, 37);
+            this.edittreefood.Location = new System.Drawing.Point(456, 37);
             this.edittreefood.Name = "edittreefood";
-            this.edittreefood.Size = new System.Drawing.Size(130, 31);
+            this.edittreefood.Size = new System.Drawing.Size(144, 31);
             this.edittreefood.TabIndex = 10;
             this.edittreefood.Text = "EditTreeFood";
             this.edittreefood.UseVisualStyleBackColor = true;
             this.edittreefood.Click += new System.EventHandler(this.edittreefood_Click);
-            // 
-            // treefood
-            // 
-            this.treefood.Location = new System.Drawing.Point(414, 6);
-            this.treefood.Name = "treefood";
-            this.treefood.Size = new System.Drawing.Size(130, 25);
-            this.treefood.TabIndex = 9;
             // 
             // Trainers
             // 

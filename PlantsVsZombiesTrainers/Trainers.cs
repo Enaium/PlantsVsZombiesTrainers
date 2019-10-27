@@ -87,13 +87,38 @@ namespace PlantsVsZombiesTrainers
         public int getFertilizerBaseAddress()
         {
             int baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
-            baseaddress = baseaddress + 0x868;
+            baseaddress = baseaddress + 0x94c;
             baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
-
+            baseaddress = baseaddress + 0x224;
             return baseaddress;
         }
 
+        public int getBugSprayBaseAddress()
+        {
+            int baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
+            baseaddress = baseaddress + 0x94c;
+            baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
+            baseaddress = baseaddress + 0x228;
+            return baseaddress;
+        }
 
+        public int getChocolateBaseAddress()
+        {
+            int baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
+            baseaddress = baseaddress + 0x94c;
+            baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
+            baseaddress = baseaddress + 0x254;
+            return baseaddress;
+        }
+
+        public int getTreeFoodBaseAddress()
+        {
+            int baseaddress = Memory.ReadMemoryValue(getBaseAddress(), gname.Text);
+            baseaddress = baseaddress + 0x94c;
+            baseaddress = Memory.ReadMemoryValue(baseaddress, gname.Text);
+            baseaddress = baseaddress + 0x25c;
+            return baseaddress;
+        }
 
         private void Main_Load(object sender, EventArgs e)
         {
@@ -108,26 +133,15 @@ namespace PlantsVsZombiesTrainers
             coin.Text = Memory.ReadMemoryValue(getCoinBaseAddress(), gname.Text).ToString();
             adv.Text = Memory.ReadMemoryValue(getAdvPageBaseAddress(), gname.Text).ToString();
             bosshp.Text = Memory.ReadMemoryValue(getBossHpBaseAddress(),gname.Text).ToString();
-            
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en");
-            ApplyResource();
+            fertilizer.Text = (Memory.ReadMemoryValue(getFertilizerBaseAddress(), gname.Text) - 1000).ToString();
+            bugspray.Text = (Memory.ReadMemoryValue(getBugSprayBaseAddress(), gname.Text) - 1000).ToString();
+            chocolate.Text = (Memory.ReadMemoryValue(getChocolateBaseAddress(), gname.Text) - 1000).ToString();
+            treefood.Text = (Memory.ReadMemoryValue(getTreeFoodBaseAddress(), gname.Text) - 1000).ToString();
         }
 
         private void reload_Click(object sender, EventArgs e)
         {
             load();
-        }
-
-        private void ApplyResource()
-        {
-            System.ComponentModel.ComponentResourceManager res = new ComponentResourceManager(typeof(Trainers));
-            foreach (Control ctl in Controls)
-            {
-                res.ApplyResources(ctl, ctl.Name);
-            }
-            this.ResumeLayout(false);
-            this.PerformLayout();
-            res.ApplyResources(this, "$this");
         }
 
         public int getBaseAddress()
@@ -225,21 +239,22 @@ namespace PlantsVsZombiesTrainers
 
         private void editfertilizer_Click(object sender, EventArgs e)
         {
-
+            Memory.WriteMemoryValue(getFertilizerBaseAddress(),gname.Text,int.Parse(fertilizer.Text) + 1000);
         }
 
         private void editbugspray_Click(object sender, EventArgs e)
         {
-
+            Memory.WriteMemoryValue(getBugSprayBaseAddress(), gname.Text, int.Parse(bugspray.Text) + 1000);
         }
 
         private void editchocolate_Click(object sender, EventArgs e)
         {
-
+            Memory.WriteMemoryValue(getChocolateBaseAddress(), gname.Text, int.Parse(chocolate.Text) + 1000);
         }
 
         private void edittreefood_Click(object sender, EventArgs e)
         {
+            Memory.WriteMemoryValue(getTreeFoodBaseAddress(), gname.Text, int.Parse(treefood.Text) + 1000);
 
         }
     }
