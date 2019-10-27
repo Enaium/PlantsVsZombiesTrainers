@@ -43,6 +43,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.editbosshp = new System.Windows.Forms.Button();
             this.bosshp = new System.Windows.Forms.TextBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.pidlabel = new System.Windows.Forms.Label();
             this.gname = new System.Windows.Forms.TextBox();
             this.reload = new System.Windows.Forms.Button();
@@ -59,6 +60,7 @@
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
+            this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Location = new System.Drawing.Point(12, 12);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -78,6 +80,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(611, 274);
             this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Basics";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // sunrain
@@ -146,14 +149,17 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(611, 274);
             this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Page";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // editadv
             // 
+            this.editadv.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.editadv.Location = new System.Drawing.Point(6, 37);
             this.editadv.Name = "editadv";
             this.editadv.Size = new System.Drawing.Size(100, 23);
             this.editadv.TabIndex = 4;
+            this.editadv.Text = "EditAdvPage";
             this.editadv.UseVisualStyleBackColor = true;
             this.editadv.Click += new System.EventHandler(this.editadv_Click);
             // 
@@ -173,7 +179,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(611, 274);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Zombies";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // editbosshp
@@ -183,6 +189,7 @@
             this.editbosshp.Name = "editbosshp";
             this.editbosshp.Size = new System.Drawing.Size(100, 31);
             this.editbosshp.TabIndex = 2;
+            this.editbosshp.Text = "EditBossHP";
             this.editbosshp.UseVisualStyleBackColor = true;
             this.editbosshp.Click += new System.EventHandler(this.editbosshp_Click);
             // 
@@ -192,6 +199,16 @@
             this.bosshp.Name = "bosshp";
             this.bosshp.Size = new System.Drawing.Size(100, 25);
             this.bosshp.TabIndex = 1;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(611, 274);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Garden";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // pidlabel
             // 
@@ -238,6 +255,7 @@
             this.Controls.Add(this.pidlabel);
             this.Controls.Add(this.tabControl);
             this.Name = "Trainers";
+            this.Text = "PvZ";
             this.Load += new System.EventHandler(this.Main_Load);
             this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -272,6 +290,7 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button editbosshp;
         private System.Windows.Forms.TextBox bosshp;
+        private System.Windows.Forms.TabPage tabPage4;
     }
 }
 

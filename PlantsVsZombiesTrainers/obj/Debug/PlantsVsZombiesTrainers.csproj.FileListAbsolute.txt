@@ -7,9 +7,3 @@ C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.exe
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.pdb
 C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.Trainers.resources
-C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\bin\Debug\en\PlantsVsZombiesTrainers.resources.dll
-C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.Trainers.en.resources
-C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\en\PlantsVsZombiesTrainers.resources.dll
-C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\bin\Debug\zh\PlantsVsZombiesTrainers.resources.dll
-C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\PlantsVsZombiesTrainers.Trainers.zh.resources
-C:\Users\lightcolour\Desktop\PlantsVsZombiesTrainers\PlantsVsZombiesTrainers\obj\Debug\zh\PlantsVsZombiesTrainers.resources.dll

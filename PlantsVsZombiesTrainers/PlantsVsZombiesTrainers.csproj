@@ -55,9 +55,6 @@
     <Compile Include="Memory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Trainers.en.resx">
-      <DependentUpon>Trainers.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Trainers.resx">
       <DependentUpon>Trainers.cs</DependentUpon>
     </EmbeddedResource>
@@ -70,9 +67,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Trainers.zh.resx">
-      <DependentUpon>Trainers.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
