@@ -57,6 +57,7 @@
             this.reload = new System.Windows.Forms.Button();
             this.nocdtimer = new System.Windows.Forms.Timer(this.components);
             this.sunraintimer = new System.Windows.Forms.Timer(this.components);
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -78,6 +79,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.checkBox1);
             this.tabPage1.Controls.Add(this.sunrain);
             this.tabPage1.Controls.Add(this.nocd);
             this.tabPage1.Controls.Add(this.editcoin);
@@ -335,6 +337,17 @@
             this.sunraintimer.Interval = 300;
             this.sunraintimer.Tick += new System.EventHandler(this.sunraintimer_Tick);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 99);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(101, 19);
+            this.checkBox1.TabIndex = 7;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Trainers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -392,6 +405,7 @@
         private System.Windows.Forms.TextBox chocolate;
         private System.Windows.Forms.Button edittreefood;
         private System.Windows.Forms.TextBox treefood;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

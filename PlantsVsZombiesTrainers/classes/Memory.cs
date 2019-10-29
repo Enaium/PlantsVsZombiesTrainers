@@ -4,7 +4,7 @@ using System.Text;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace PlantsVsZombiesTool
+namespace PlantsVsZombiesTool.classes
 {
 
     public abstract class Memory
@@ -42,6 +42,16 @@ namespace PlantsVsZombiesTool
                 int[] lpBuffer,
                 int nSize,
                 IntPtr lpNumberOfBytesWritten
+            );
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        public static extern bool WriteProcessMemory
+            (
+                IntPtr handle,
+                IntPtr baseAddress,
+                byte[] buffer,
+                int size, 
+                out int length
             );
 
         //获取窗体的进程标识ID
@@ -114,5 +124,26 @@ namespace PlantsVsZombiesTool
             WriteProcessMemory(hProcess, (IntPtr)baseAddress, new int[] { value }, 4, IntPtr.Zero);
             CloseHandle(hProcess);
         }
+
+
+        public static void WriteMemoryValue(int address, string processName, byte[] data)
+        {
+            IntPtr _handle = OpenProcess(1080, false, GetPidByProcessName(processName));
+
+            if (_handle == IntPtr.Zero)
+                throw new InvalidOperationException("Cannot write process memory at " + address.ToString() + ". No process loaded.");
+
+            if (new IntPtr(address) == IntPtr.Zero)
+                throw new ArgumentOutOfRangeException("Cannot write process memory. Invalid memory address.");
+
+            if (data.Length < 1)
+                throw new ArgumentOutOfRangeException("Cannot write process memory of size " + data.Length + ".");
+
+            int bytesWritten;
+
+            if (!WriteProcessMemory(_handle, new IntPtr(address), data, data.Length, out bytesWritten))
+                throw new Exception("Failed to write process memory at " + address.ToString() + ". Error code: " + Marshal.GetLastWin32Error().ToString());
+        }
+
     }
 }

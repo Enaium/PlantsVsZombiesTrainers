@@ -52,7 +52,7 @@
     <Compile Include="Trainers.Designer.cs">
       <DependentUpon>Trainers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Memory.cs" />
+    <Compile Include="classes\Memory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Trainers.resx">
